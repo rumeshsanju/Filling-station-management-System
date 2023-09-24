@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="supplier" targetNamespace="http://tempuri.org/supplier.xsd" xmlns:mstns="http://tempuri.org/supplier.xsd" xmlns="http://tempuri.org/supplier.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="supplier" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="supplier" msprop:Generator_DataSetName="supplier">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="supplier" msprop:Generator_RowEvHandlerName="supplierRowChangeEventHandler" msprop:Generator_RowDeletedName="supplierRowDeleted" msprop:Generator_RowDeletingName="supplierRowDeleting" msprop:Generator_RowEvArgName="supplierRowChangeEvent" msprop:Generator_TablePropName="_supplier" msprop:Generator_RowChangedName="supplierRowChanged" msprop:Generator_RowChangingName="supplierRowChanging" msprop:Generator_TableClassName="supplierDataTable" msprop:Generator_RowClassName="supplierRow" msprop:Generator_TableVarName="tablesupplier" msprop:Generator_UserTableName="supplier">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="supplierID" msprop:Generator_ColumnPropNameInRow="supplierID" msprop:Generator_ColumnPropNameInTable="supplierIDColumn" msprop:Generator_ColumnVarNameInTable="columnsupplierID" msprop:Generator_UserColumnName="supplierID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="organization" msprop:Generator_ColumnPropNameInRow="organization" msprop:Generator_ColumnPropNameInTable="organizationColumn" msprop:Generator_ColumnVarNameInTable="columnorganization" msprop:Generator_UserColumnName="organization">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fuel_Type" msprop:Generator_ColumnPropNameInRow="fuel_Type" msprop:Generator_ColumnPropNameInTable="fuel_TypeColumn" msprop:Generator_ColumnVarNameInTable="columnfuel_Type" msprop:Generator_UserColumnName="fuel_Type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="contact" msprop:Generator_ColumnPropNameInRow="contact" msprop:Generator_ColumnPropNameInTable="contactColumn" msprop:Generator_ColumnVarNameInTable="columncontact" msprop:Generator_UserColumnName="contact" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="supply_Price_Per_Liter" msprop:Generator_ColumnPropNameInRow="supply_Price_Per_Liter" msprop:Generator_ColumnPropNameInTable="supply_Price_Per_LiterColumn" msprop:Generator_ColumnVarNameInTable="columnsupply_Price_Per_Liter" msprop:Generator_UserColumnName="supply_Price_Per_Liter" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="amount_Of_Order" msprop:Generator_ColumnPropNameInRow="amount_Of_Order" msprop:Generator_ColumnPropNameInTable="amount_Of_OrderColumn" msprop:Generator_ColumnVarNameInTable="columnamount_Of_Order" msprop:Generator_UserColumnName="amount_Of_Order" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Date_Of_Next_Order" msprop:Generator_ColumnPropNameInRow="Date_Of_Next_Order" msprop:Generator_ColumnPropNameInTable="Date_Of_Next_OrderColumn" msprop:Generator_ColumnVarNameInTable="columnDate_Of_Next_Order" msprop:Generator_UserColumnName="Date_Of_Next_Order">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:supplier" />
+      <xs:field xpath="mstns:supplierID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

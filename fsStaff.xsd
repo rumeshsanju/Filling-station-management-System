@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="fsStaff" targetNamespace="http://tempuri.org/fsStaff.xsd" xmlns:mstns="http://tempuri.org/fsStaff.xsd" xmlns="http://tempuri.org/fsStaff.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="fsStaff" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="fsStaff" msprop:Generator_DataSetName="fsStaff">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="staff" msprop:Generator_RowEvHandlerName="staffRowChangeEventHandler" msprop:Generator_RowDeletedName="staffRowDeleted" msprop:Generator_RowDeletingName="staffRowDeleting" msprop:Generator_RowEvArgName="staffRowChangeEvent" msprop:Generator_TablePropName="staff" msprop:Generator_RowChangedName="staffRowChanged" msprop:Generator_RowChangingName="staffRowChanging" msprop:Generator_TableClassName="staffDataTable" msprop:Generator_RowClassName="staffRow" msprop:Generator_TableVarName="tablestaff" msprop:Generator_UserTableName="staff">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="staffID" msprop:Generator_ColumnPropNameInRow="staffID" msprop:Generator_ColumnPropNameInTable="staffIDColumn" msprop:Generator_ColumnVarNameInTable="columnstaffID" msprop:Generator_UserColumnName="staffID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stf_Name" msprop:Generator_ColumnPropNameInRow="stf_Name" msprop:Generator_ColumnPropNameInTable="stf_NameColumn" msprop:Generator_ColumnVarNameInTable="columnstf_Name" msprop:Generator_UserColumnName="stf_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stf_Gender" msprop:Generator_ColumnPropNameInRow="stf_Gender" msprop:Generator_ColumnPropNameInTable="stf_GenderColumn" msprop:Generator_ColumnVarNameInTable="columnstf_Gender" msprop:Generator_UserColumnName="stf_Gender" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stf_phoneNo" msprop:Generator_ColumnPropNameInRow="stf_phoneNo" msprop:Generator_ColumnPropNameInTable="stf_phoneNoColumn" msprop:Generator_ColumnVarNameInTable="columnstf_phoneNo" msprop:Generator_UserColumnName="stf_phoneNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stf_Join" msprop:Generator_ColumnPropNameInRow="stf_Join" msprop:Generator_ColumnPropNameInTable="stf_JoinColumn" msprop:Generator_ColumnVarNameInTable="columnstf_Join" msprop:Generator_UserColumnName="stf_Join" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stf_Position" msprop:Generator_ColumnPropNameInRow="stf_Position" msprop:Generator_ColumnPropNameInTable="stf_PositionColumn" msprop:Generator_ColumnVarNameInTable="columnstf_Position" msprop:Generator_UserColumnName="stf_Position" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stf_Age" msprop:Generator_ColumnPropNameInRow="stf_Age" msprop:Generator_ColumnPropNameInTable="stf_AgeColumn" msprop:Generator_ColumnVarNameInTable="columnstf_Age" msprop:Generator_UserColumnName="stf_Age" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:staff" />
+      <xs:field xpath="mstns:staffID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
